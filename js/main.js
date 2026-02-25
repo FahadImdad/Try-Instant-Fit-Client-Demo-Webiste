@@ -862,6 +862,7 @@ function initProductDetail() {
     const rel = ALL_PRODUCTS.filter(x => x.id !== p.id && x.cat === p.cat).slice(0,4);
     relGrid.innerHTML = rel.map(renderCard).join('');
   }
+
 }
 
 window.switchPdImg = function(src, el) {
